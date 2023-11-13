@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Myriad+Pro:wght@600&display=swap');
+*{
+    max-width: 1000px;
+    margin: auto;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+nav {
+    position: absolute;
+    background-color: #16416B;
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+
+
+.nav-options {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+.nav-options:hover {
+    background-color: steelblue;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Media query for 600px and below */
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon span {
+        background-color: white;
+        display: block;
+        width: 27px;
+        height: 3px;
+        margin: 5px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #16416B;
+    }
+
+    .nav-options {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+    }
+}
+
+footer {
+    background-color: #16416B;
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+main {
+    background-color: steelblue;
+    padding: 0.75rem;
+    color: white;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.main-text {
+    margin: 2rem 0rem 1rem;
+}
+
+h1, h2{
+    padding-top: 2rem;
+}
+
+h3 {
+    padding: 1rem 0rem 1.25rem 0rem;
+}
+
+.writing {
+    padding-left: 2rem;
+}
+
+form {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+
+textarea {
+    height: 150px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+label.checkbox-label {
+    display: inline-block;
+}
+
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.putin {
+    border-radius: 10px;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin: 20px;
+    position: relative
+}
+
+.putin-img {
+    width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4%;
+    margin: 15px;
+}
+
+.putin::before {
+    content: '';
+    width: 5px; /* Adjust the width of the blue stripe as needed */
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+table {
+    padding-top: 5rem;
+}
+
+.adresse {
+    border-top: grey 0.15rem solid;
+}
+
+.myriad-bold {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+}
+
+.myriad {
+    font-family: 'Myriad Pro', sans-serif;
+
+}
+
+.myriad-quote {
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+
+.quote {
+    font-style: italic;
+}
